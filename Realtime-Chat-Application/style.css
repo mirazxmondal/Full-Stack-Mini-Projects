@@ -1,0 +1,20 @@
+.whole-container{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.text-container{
+    border: solid black 2px;
+    border-radius: 5px;
+    height: 600px;
+    width: 500px;
+}
+
+.message-input{
+    border-radius: 5px;
+    width: 400px;
+}
+
+.send-button{
+    width: 80px;
+}
