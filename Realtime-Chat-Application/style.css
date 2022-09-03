@@ -1,6 +1,12 @@
+body{
+    background: rgb(105,191,100);
+    background: radial-gradient(circle, rgba(105,191,100,1) 42%, rgba(245,245,220,1) 91%);
+}
+
 .whole-container{
-    padding-top: 50px;
-    padding-left: 100px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
 
 .text-container{
@@ -12,9 +18,12 @@
 
 .message-input{
     border-radius: 5px;
+    height: 30px; 
     width: 400px;
 }
 
 .send-button{
+    border-radius: 5px;
+    height: 35px; 
     width: 80px;
 }
