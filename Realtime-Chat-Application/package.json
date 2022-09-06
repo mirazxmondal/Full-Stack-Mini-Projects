@@ -1,0 +1,19 @@
+{
+  "name": "Realtime-Chat-Application",
+  "version": "1.0.0",
+  "description": "Chat, also known as online chat or internet chat, is a way of communication and interaction in real time on the Internet. This communication is based on text messages. Two or more people can communicate and also send pictures, videos or audio files.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
