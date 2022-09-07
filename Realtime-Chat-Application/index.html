@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>... chat app</title>
     <link rel="stylesheet" href="/style.css">
-    <title>Chat-Application</title>
 </head>
+
 <body>
-    <div class="whole-container">
-    <div class="text-container">  </div> <br>
-    <form action="send-container">
-        <input type="text" class="message-input">
-        <button type="submit" class="send-button">Send!</button>
-    </form>
-    </div>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="./public/new.gif" alt="">
+            <h1>FIEM</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
 </body>
 </html>
