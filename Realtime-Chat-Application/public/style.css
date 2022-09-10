@@ -102,3 +102,21 @@ textarea {
     color: #333;
     font-size: 14px;
 }
+
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
+}
+
+.dark {
+  background-color: #28282B;
+  span {
+    color: #fff
+  }
+}
