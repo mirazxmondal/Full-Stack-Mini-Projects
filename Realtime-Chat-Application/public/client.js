@@ -1,3 +1,32 @@
+const socket = io()
+let name;
+let textarea = document.querySelector('#textarea')
+let messageArea = document.querySelector('.message__area')
+do {
+    name = prompt('Please enter your name: ')
+} while(!name)
+
+textarea.addEventListener('keyup', (e) => {
+    if(e.key === 'Enter') {
+        sendMessage(e.target.value)
+    }
+})
+
+function sendMessage(message) {
+    let msg = {
+        user: name,
+        message: message.trim()
+    }
+    // Append 
+    appendMessage(msg, 'outgoing')
+    textarea.value = ''
+    scrollToBottom()
+
+    // Send to server 
+    socket.emit('message', msg)
+
+}
+
     // Wait for document to load
     document.addEventListener("DOMContentLoaded", function(event) {
         document.documentElement.setAttribute("data-theme", "light");
